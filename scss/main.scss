@@ -1,0 +1,64 @@
+@forward 'boilerplate';
+@forward 'colors';
+@forward 'typography';
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--page-background);
+  position: relative;
+  font-family: var(--main-font);
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 15vh;
+  flex-direction: column;
+  background: var(--container-background);
+  border-radius: 20px;
+  width: 375px;
+  padding: 20px;
+  box-shadow: 2px 4px 20px 5px rgba(178, 178, 178, 0.3);
+  
+  img {
+    border-radius: 10px;
+  
+  }
+
+  h1 {
+    font-size: var(--title-font-size);
+    font-weight: var(--font-weight-bold);
+    color: var(--title-color);
+    text-align: center;
+    padding-inline: 10px;
+  
+  }
+  
+  p {
+    width: 78%;
+    font-size: var(--paragraph-font-size);
+    font-weight: var(--font-weight-normal);
+    color: var(--text-color);
+    text-align: center;
+    margin: 0 auto;
+  
+  }
+  
+  .attribution {
+     font-size: var(--footer-font-size); 
+     text-align: center;
+     position: relative;
+     bottom: -10px;
+     padding-bottom: 10px;
+     a {
+      color: var(--link-color);
+     } 
+     
+    }
+}

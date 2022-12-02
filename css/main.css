@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --container-background: hsl(0, 0%, 100%);
+  --page-background: hsl(212, 45%, 89%);
+  --title-color: hsl(218, 44%, 22%);
+  --text-color: hsl(220, 15%, 55%);
+  --link-color: hsl(228, 45%, 44%);
+}
+
+:root {
+  --main-font: "Outfit", sans-serif;
+  --title-font-size: 24px;
+  --footer-font-size: 11px;
+  --paragraph-font-size: 15px;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --text-font-size: 15px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: var(--page-background);
+  position: relative;
+  font-family: var(--main-font);
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+  top: 15vh;
+  flex-direction: column;
+  background: var(--container-background);
+  border-radius: 20px;
+  width: 375px;
+  padding: 20px;
+  box-shadow: 2px 4px 20px 5px rgba(178, 178, 178, 0.3);
+}
+.container img {
+  border-radius: 10px;
+}
+.container h1 {
+  font-size: var(--title-font-size);
+  font-weight: var(--font-weight-bold);
+  color: var(--title-color);
+  text-align: center;
+  padding-inline: 10px;
+}
+.container p {
+  width: 78%;
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--font-weight-normal);
+  color: var(--text-color);
+  text-align: center;
+  margin: 0 auto;
+}
+.container .attribution {
+  font-size: var(--footer-font-size);
+  text-align: center;
+  position: relative;
+  bottom: -10px;
+  padding-bottom: 10px;
+}
+.container .attribution a {
+  color: var(--link-color);
+}/*# sourceMappingURL=main.css.map */
